@@ -13,7 +13,8 @@ end
 
 def move(board,position,char = '')
   display_board(board)
-  board[position] << char.reject!(&:empty?)
+  board[position] << char.reduce
+  
 end
 
   
